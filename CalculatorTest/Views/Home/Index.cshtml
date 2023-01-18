@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="col-md-12">
+
+
+    <div class="card bg-white">
+
+        <div class="card-header">
+            <span>Simple Calculator</span>
+        </div>
+
+        <div class="card-body pb-0" style="overflow-x:auto">
+
+            <div style="margin-bottom:20px">
+                <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#calcModal">Perform Calculation</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="calcModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Calculator</h4>
+            </div>
+            <div class="modal-body">
+
+                <span class="validation text-danger"></span>
+
+                <div class="form-group">
+                    <label class="control-label">First Number</label>
+                    <input type="number" class="form-control" id="num1" name="CourseCode" placeholder="Enter a number" required />                   
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label">Second Number</label>
+                    <input type="number" class="form-control" id="num2" name="CourseCode" placeholder="Enter a number" required />
+                </div>
+
+                <div>
+                    <span id="result"></span>
+                </div>
+
+                   <br />
+                  <div class="form-group">
+                  <p><button id="btn_add"  class="btn btn-primary btn-block">Add</button></p>
+                  <p><button id="btn_sub" class="btn btn-primary btn-block">Subtract</button></p>
+                  </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
