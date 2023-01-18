@@ -1,6 +1,8 @@
 ﻿/// <reference path="../lib/jquery/dist/jquery.js" />
 
 $(function () {
+
+    //please run the application on same iis port or change to your configured port.
     var baseUrl = 'https://localhost:7212/';
 
     $(document).on('click', '[data-dismiss="modal"]', function () {
